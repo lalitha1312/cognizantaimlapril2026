@@ -46,3 +46,5 @@
 2026-04-17 06:31:06,791 - healthacre_logger - INFO - Adding appointment: Appointment (id= 2665, patient= Patient [id= 9364, name= Jamal White, age= 62, ailment= ['back pain']], doctor= Doctor (id= 9781, name= Alice Carter, specialty= General Practice), appointment_time= 2026-04-17 06:31:06.791021)
 2026-04-17 06:31:06,791 - healthacre_logger - INFO - Getting appointment by id: 2665
 2026-04-17 06:31:06,791 - healthacre_logger - INFO - Appointment added: Appointment (id= 2665, patient= Patient [id= 9364, name= Jamal White, age= 62, ailment= ['back pain']], doctor= Doctor (id= 9781, name= Alice Carter, specialty= General Practice), appointment_time= 2026-04-17 06:31:06.791021)
+2026-04-17 11:49:41,596 - healthacre_logger - INFO - Mobile number updated to: 6908393459
+2026-04-17 11:49:57,309 - healthacre_logger - INFO - Mobile number updated to: 9232976599
