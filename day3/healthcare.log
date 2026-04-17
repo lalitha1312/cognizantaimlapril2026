@@ -1,2 +1,48 @@
 2026-04-16 09:54:44,558 - healthacre_logger - INFO - app running successfully
 2026-04-16 10:08:15,993 - healthacre_logger - INFO - app running successfully
+2026-04-17 06:17:34,704 - healthacre_logger - INFO - app running successfully
+2026-04-17 06:30:14,821 - healthacre_logger - INFO - app doctor agent is running...
+2026-04-17 06:30:14,821 - healthacre_logger - INFO - Adding doctor: Doctor (id= 5699, name= Emily Roberts, specialty= Orthopedics)
+2026-04-17 06:30:14,821 - healthacre_logger - INFO - Getting doctor by id: 5699
+2026-04-17 06:30:14,821 - healthacre_logger - INFO - Doctor added: Doctor (id= 5699, name= Emily Roberts, specialty= Orthopedics)
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - app patient agent is running...
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Adding patient: Patient [id= 2263, name= Jamal White, age= 71, ailment= ['allergy']]
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Patient added successfully: Patient [id= 2263, name= Jamal White, age= 71, ailment= ['allergy']]
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Getting patient by id: 2263
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Patient added: Patient [id= 2263, name= Jamal White, age= 71, ailment= ['allergy']]
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - app appointment agent is running...
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Getting patient by id: 2263
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Getting doctor by id: 5699
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Adding appointment: Appointment (id= 5297, patient= Patient [id= 2263, name= Jamal White, age= 71, ailment= ['allergy']], doctor= Doctor (id= 5699, name= Emily Roberts, specialty= Orthopedics), appointment_time= 2026-04-17 06:30:14.822805)
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Getting appointment by id: 5297
+2026-04-17 06:30:14,822 - healthacre_logger - INFO - Appointment added: Appointment (id= 5297, patient= Patient [id= 2263, name= Jamal White, age= 71, ailment= ['allergy']], doctor= Doctor (id= 5699, name= Emily Roberts, specialty= Orthopedics), appointment_time= 2026-04-17 06:30:14.822805)
+2026-04-17 06:30:46,275 - healthacre_logger - INFO - app doctor agent is running...
+2026-04-17 06:30:46,275 - healthacre_logger - INFO - Adding doctor: Doctor (id= 7496, name= David Kim, specialty= General Practice)
+2026-04-17 06:30:46,275 - healthacre_logger - INFO - Getting doctor by id: 7496
+2026-04-17 06:30:46,275 - healthacre_logger - INFO - Doctor added: Doctor (id= 7496, name= David Kim, specialty= General Practice)
+2026-04-17 06:30:46,275 - healthacre_logger - INFO - app patient agent is running...
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Adding patient: Patient [id= 376, name= Harris Nguyen, age= 47, ailment= ['cold']]
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Patient added successfully: Patient [id= 376, name= Harris Nguyen, age= 47, ailment= ['cold']]
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Getting patient by id: 376
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Patient added: Patient [id= 376, name= Harris Nguyen, age= 47, ailment= ['cold']]
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - app appointment agent is running...
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Getting patient by id: 376
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Getting doctor by id: 7496
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Adding appointment: Appointment (id= 9856, patient= Patient [id= 376, name= Harris Nguyen, age= 47, ailment= ['cold']], doctor= Doctor (id= 7496, name= David Kim, specialty= General Practice), appointment_time= 2026-04-17 06:30:46.276527)
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Getting appointment by id: 9856
+2026-04-17 06:30:46,276 - healthacre_logger - INFO - Appointment added: Appointment (id= 9856, patient= Patient [id= 376, name= Harris Nguyen, age= 47, ailment= ['cold']], doctor= Doctor (id= 7496, name= David Kim, specialty= General Practice), appointment_time= 2026-04-17 06:30:46.276527)
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - app doctor agent is running...
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Adding doctor: Doctor (id= 9781, name= Alice Carter, specialty= General Practice)
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Getting doctor by id: 9781
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Doctor added: Doctor (id= 9781, name= Alice Carter, specialty= General Practice)
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - app patient agent is running...
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Adding patient: Patient [id= 9364, name= Jamal White, age= 62, ailment= ['back pain']]
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Patient added successfully: Patient [id= 9364, name= Jamal White, age= 62, ailment= ['back pain']]
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Getting patient by id: 9364
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Patient added: Patient [id= 9364, name= Jamal White, age= 62, ailment= ['back pain']]
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - app appointment agent is running...
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Getting patient by id: 9364
+2026-04-17 06:31:06,790 - healthacre_logger - INFO - Getting doctor by id: 9781
+2026-04-17 06:31:06,791 - healthacre_logger - INFO - Adding appointment: Appointment (id= 2665, patient= Patient [id= 9364, name= Jamal White, age= 62, ailment= ['back pain']], doctor= Doctor (id= 9781, name= Alice Carter, specialty= General Practice), appointment_time= 2026-04-17 06:31:06.791021)
+2026-04-17 06:31:06,791 - healthacre_logger - INFO - Getting appointment by id: 2665
+2026-04-17 06:31:06,791 - healthacre_logger - INFO - Appointment added: Appointment (id= 2665, patient= Patient [id= 9364, name= Jamal White, age= 62, ailment= ['back pain']], doctor= Doctor (id= 9781, name= Alice Carter, specialty= General Practice), appointment_time= 2026-04-17 06:31:06.791021)

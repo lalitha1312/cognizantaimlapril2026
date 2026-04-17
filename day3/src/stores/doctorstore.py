@@ -7,9 +7,9 @@ import os
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.append(project_root)
 
-from models.doctor import Doctor
+from src.models.doctor import Doctor
 from conf.logger_conf import setup_logger
-from exceptions.doctor_not_found_exception import DoctorNotFoundException
+from src.exceptions.doctor_not_found_exception import DoctorNotFoundException
 
 logger = setup_logger()
 
