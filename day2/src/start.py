@@ -6,9 +6,7 @@ import random
 
 
 def generate_otp():
-    """
-    This function generates a random 6-digit OTP (One-Time Password).
-    """
+    """Generates a random 6-digit OTP (One Time Password)."""
     otp = random.randint(100000, 999999)
     return otp
 

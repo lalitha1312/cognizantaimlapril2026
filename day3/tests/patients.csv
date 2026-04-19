@@ -1,16 +1,11 @@
-id,name,age,ailment
-1,Ravi Kumar,45,Diabetes
-2,Anita Sharma,32,Asthma
-3,Sunil Mehta,50,Hypertension
-4,Priya Nair,28,Migraine
-5,Arjun Reddy,60,Arthritis
-6,Neha Joshi,25,Allergy
-7,Vikram Singh,55,Heart Disease
-8,Meera Iyer,40,Thyroid Disorder
-9,Karan Patel,36,Depression
-10,Anjali Desai,22,Flu
-11,Suresh Menon,48,Back Pain
-12,Kavita Rao,30,Anemia
-13,Amitabh Das,52,Stomach Ulcer
-14,Pooja Bhatia,27,Chronic Cough
-15,Rajiv Nair,42,Insomnia
+id,name,dob,ailment
+1,Anil Kumar,1985-04-12,Diabetes
+2,Sunitha Nair,1990-09-25,Hypertension
+3,Rahul Menon,1978-01-30,Migraine
+4,Priya Sharma,1995-07-18,Asthma
+5,Suresh Iyer,1968-11-05,Arthritis
+6,Anitha Rao,1988-03-22,Thyroid
+7,Vivek Das,1975-12-14,Cardiac Issues
+8,Neha Patel,1992-06-09,Anemia
+9,Ramesh Pillai,1980-02-28,Sinusitis
+10,Kavya S,2000-10-03,Fever

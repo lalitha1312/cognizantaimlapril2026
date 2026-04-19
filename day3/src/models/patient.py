@@ -1,16 +1,12 @@
-"""
-create patient class with attributes id, name, age, and medical_history
-""" 
-
+#create patient
 import typing
-
-
+from datetime import date
 class Patient:
-    def __init__(self, id: int, name: str, age: int, ailment: list):
+    def __init__(self, id : int, name : str, dob : date, ailment : str):
         self.id = id
         self.name = name
-        self.age = age
+        self.dob = dob
         self.ailment = ailment
 
     def __str__(self):
-        return f"Patient [id= {self.id}, name= {self.name}, age= {self.age}, ailment= {self.ailment}]"
+        return f"Patient(id={self.id}, name='{self.name}', dob={self.dob}, ailment='{self.ailment}')"

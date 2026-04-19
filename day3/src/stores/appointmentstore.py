@@ -1,58 +1,45 @@
 """
-create crud operations for appointment
+create appoinment store
 """
-
-import os
 import sys
-from datetime import datetime
+import os
 
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+# Add project root to Python path
+project_root = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', '..')
+)
+
 sys.path.append(project_root)
 
 from conf.logger_conf import setup_logger
-from src.exceptions.appointment_not_found_exception import AppointmentNotFoundException
 from src.models.appointment import Appointment
-from src.models.doctor import Doctor
-from src.models.patient import Patient
 
 logger = setup_logger()
-
 class AppointmentStore:
     def __init__(self):
         self.appointments = []
-
     def add_appointment(self, appointment: Appointment):
         logger.info(f"Adding appointment: {appointment}")
         self.appointments.append(appointment)
-
-    def get_appointment_by_id(self, id: int) -> Appointment:
-        logger.info(f"Getting appointment by id: {id}")
-        for appointment in self.appointments:
-            if appointment.id == id:
-                return appointment
-        raise AppointmentNotFoundException(f"Appointment with id {id} not found")
-
-    def get_all_appointments(self) -> list:
-        logger.info("Getting all appointments")
+    def get_all_appointments(self):
+        logger.info("Fetching all appointments")
         return self.appointments
-
-    def update_appointment(self, id: int, patient: Patient = None, doctor: Doctor = None, appointment_time: datetime = None):
-        logger.info(f"Updating appointment with id: {id}")
-        appointment = self.get_appointment_by_id(id)
+    def get_appointment_by_id(self, appointment_id: int) -> Appointment:
+        logger.info(f"Fetching appointment with ID: {appointment_id}")
+        for appointment in self.appointments:
+            if appointment.id == appointment_id:
+                return appointment
+        raise Exception(f"Appointment with ID {appointment_id} not found")
+    def update_appointment(self, appointment_id: int, doctor_id: int = None, patient_name: str = None, date: str = None):
+        appointment = self.get_appointment_by_id(appointment_id)
+        logger.info(f"Updating appointment with ID: {appointment_id}")
         if appointment:
-            if patient is not None:
-                appointment.patient = patient
-            if doctor is not None:
-                appointment.doctor = doctor
-            if appointment_time is not None:
-                appointment.appointment_time = appointment_time
-            return True
-        return False
-
-    def delete_appointment(self, id: int):
-        logger.info(f"Deleting appointment with id: {id}")
-        appointment = self.get_appointment_by_id(id)
-        if appointment:
-            self.appointments.remove(appointment)
-            return True
-        return False
+            if doctor_id:
+                appointment.doctor_id = doctor_id
+            if patient_name:
+                appointment.patient_name = patient_name
+            if date:
+                appointment.date = date
+    def delete_appointment(self, appointment_id: int):
+        logger.info(f"Deleting appointment with ID: {appointment_id}")
+        self.appointments = [appointment for appointment in self.appointments if appointment.id != appointment_id]

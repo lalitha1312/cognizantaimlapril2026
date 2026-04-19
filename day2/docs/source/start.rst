@@ -1,7 +1,7 @@
-start module 
-==================
+start module
+================
 
 .. automodule:: start
    :members:
    :undoc-members:
-   :show-inheritance:
+   :show-inheritance:   

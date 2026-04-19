@@ -1,10 +1,9 @@
-import typing
-
+#define a Doctor class with id, name, and specialization attributes
 class Doctor:
-    def __init__(self, id: int, name: str, specialty: str):
+    def __init__(self, id : int, name : str, specialization : str):
         self.id = id
         self.name = name
-        self.specialty = specialty
+        self.specialization = specialization
 
     def __str__(self):
-        return f"Doctor (id= {self.id}, name= {self.name}, specialty= {self.specialty})"
+        return f"Doctor(id={self.id}, name='{self.name}', specialization='{self.specialization}')"

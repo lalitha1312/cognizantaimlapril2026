@@ -1,23 +1,19 @@
-"""
-write the test case for doctor not found exception
-"""
-
-
+#write test case for doctor store to check if doctor not found exception is raised when doctor id is not found in the store
 import sys
 import os
-import csv
 import pytest
+import csv
 
-#add project root to Python path
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+# Add project root to Python path
+project_root = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', '..')
+)
+
 sys.path.append(project_root)
-
-from src.models.doctor import Doctor
+from src.exception.doctor_not_found_exception import DoctorNotFoundException
 from src.stores.doctorstore import DoctorStore
-from src.exceptions.doctor_not_found_exception import DoctorNotFoundException
 
 def test_doctor_not_found_exception():
-    doctorstore = DoctorStore()
+    doctor_store = DoctorStore()
     with pytest.raises(DoctorNotFoundException):
-        doctorstore.get_doctor_by_id(98)
-
+        doctor_store.get_doctor_by_id(999)

@@ -1,60 +1,57 @@
-"""
-test for doctor contract
-"""
+
+#test for doctor
 
 import sys
 import os
-import csv
 import pytest
+import csv
 
-#add project root to Python path
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+# Add project root to Python path
+project_root = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', '..')
+)
+
 sys.path.append(project_root)
-
 from src.models.doctor import Doctor
-"""
-test for doctor object created
-"""
+
 @pytest.fixture
 def initialize_doctor():
-    doctor = Doctor(id=1, name="Aditya Verma", specialty="Cardiology")
+    doctor = Doctor(id=1, name="Dr. Smith", specialization="Cardiology")
     return doctor
 
-
 def read_doctor_data_from_csv():
+    #read doctor data from csv file and return as list of tuples
+    doctor_data = []
+    with open('tests/doctors.csv', mode='r', newline="", encoding='utf-8') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+            doctor_data.append((int(row['id']), row['name'], row['specialization']))
+    return doctor_data
 
 
-    doctors_data = []
-    with open('tests/doctors.csv', mode='r', newline='', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            doctors_data.append((int(row['id']), row['name'], row['specialty']))
-    return doctors_data
-
-
+# Test for doctor object created
 def test_doctor_creation(initialize_doctor):
     doctor = initialize_doctor
     assert doctor.id == 1
-    assert doctor.name == "Aditya Verma"
-    assert doctor.specialty == "Cardiology"
+    assert doctor.name == "Dr. Smith"
+    assert doctor.specialization == "Cardiology"
 
-@pytest.mark.parametrize("id, name, specialty", [
-    (2, "Balu Subramanian", "Neurology"),    
-    (3, "Challa Nithya", "Dermatology"),
-    (4, "Deshpande Harsha", "Endocrinology"),
-    (5, "Emaddi Keerthana", "General Practice"),
+  #parameterized test for doctor object created
+@pytest.mark.parametrize("id, name, specialization", [
+    (1, "Dr. Smith", "Cardiology"),
+    (2, "Dr. Johnson", "Neurology"),
+    (3, "Dr. Williams", "Pediatrics")
 ])
-def test_parameterized_doctor_creation(id, name, specialty):
-    doctor = Doctor(id=id, name=name, specialty=specialty)
+def test_doctor_creation_parameterized(id, name, specialization):
+    doctor = Doctor(id=id, name=name, specialization=specialization)
     assert doctor.id == id
     assert doctor.name == name
-    assert doctor.specialty == specialty
+    assert doctor.specialization == specialization
 
-@pytest.mark.parametrize("id, name, specialty", read_doctor_data_from_csv())
-def test_parameterized_csv(id, name, specialty):
-    doctor = Doctor(id=id, name=name, specialty=specialty)
+@pytest.mark.parametrize("id, name, specialization", read_doctor_data_from_csv())
+def test_doctor_creation_csv_parameterized(id, name, specialization):
+    doctor = Doctor(id=id, name=name, specialization=specialization)
     assert doctor.id == id
     assert doctor.name == name
-    assert doctor.specialty == specialty
-
-
+    assert doctor.specialization == specialization    
+    

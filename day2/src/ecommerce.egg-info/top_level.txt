@@ -1,5 +1,5 @@
 app
-model
+models
 start
 store
 view

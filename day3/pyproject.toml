@@ -1,32 +1,26 @@
-#configuring toml
+#configure toml
 [project]
-
 name = "Healthcare"
 version = "1.0.0"
-description = "Healthcare management"
+description = "Healthcare Management"
 readme = "README.md"
-
 authors = [
-   {name= "Lalitha", email= "lalithaag04@gmail.com"}
+    {name = "Shanmuga Lingam", email = "shanmugalingam2005@gmail.com"}
 ]
-
 requires-python = ">=3.8"
-
-#prodction dependencies
+#Production Dependencies
 dependencies = [
     "faker>=13.3.4"
 ]
-
-#develpment dependencies
+#Development Dependencies
 [project.optional-dependencies]
 dev = [
-  "pytest>=7.2.0",
-  "pytest-cov>=3.0.0",
-  "black>=23.3.0",
-  "isort>=5.10.1",
-  "sphinx>=5.0.0",
-  "pytest-html>=4.2.0"
-
+    "pytest>=7.2.0",
+    "pytest-html>=4.2.0",
+    "pytest-cov>=3.0.0",
+    "black>=23.3.0",
+    "isort>=5.10.0",
+    "sphinx>=5.0.0"
 ]
 
 [tool.black]

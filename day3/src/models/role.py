@@ -1,14 +1,11 @@
-"""
-role mkdel definition
-"""
-
+#role model definition
 class Role:
-    """ a classs representing a role in the hospital management system """
-    def __init__(self, name: str, description: str):
+    def __init__(self, name: str, description: str = None, permissions: list = None):
         self.__name = name
         self.__description = description
+        self.__permissions = permissions if permissions else []
 
-    #getters for role_name and role_description
+    #getter for role
     @property
     def name(self):
         return self.__name
@@ -18,5 +15,15 @@ class Role:
         return self.__description
 
     @description.setter
-    def description(self, value):
-        self.__description = value
+    def description(self, description):
+        self.__description = description
+
+    @property
+    def permissions(self):
+        return self.__permissions
+
+    @permissions.setter
+    def permissions(self, permissions):
+        self.__permissions = permissions            
+
+    
