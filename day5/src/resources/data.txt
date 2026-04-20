@@ -1,0 +1,59 @@
+CustID: 201
+FirstName: Aarav
+LastName: Patel
+Email: aarav.patel@example.com
+PhoneNumber: 9876543210
+
+CustID: 202
+FirstName: Ananya
+LastName: Iyer
+Email: ananya.iyer@example.com
+PhoneNumber: 9123456780
+
+CustID: 203
+FirstName: Vihaan
+LastName: Reddy
+Email: vihaan.reddy@example.com
+PhoneNumber: 9988776655
+
+CustID: 204
+FirstName: Diya
+LastName: Sharma
+Email: diya.sharma@example.com
+PhoneNumber: 9090909090
+
+CustID: 205
+FirstName: Arjun
+LastName: Menon
+Email: arjun.menon@example.com
+PhoneNumber: 9812345678
+
+CustID: 206
+FirstName: Ishita
+LastName: Kapoor
+Email: ishita.kapoor@example.com
+PhoneNumber: 9823456789
+
+CustID: 207
+FirstName: Rohan
+LastName: Chopra
+Email: rohan.chopra@example.com
+PhoneNumber: 9834567890
+
+CustID: 208
+FirstName: Kavya
+LastName: Nair
+Email: kavya.nair@example.com
+PhoneNumber: 9845678901
+
+CustID: 209
+FirstName: Aditya
+LastName: Gupta
+Email: aditya.gupta@example.com
+PhoneNumber: 9856789012
+
+CustID: 210
+FirstName: Meera
+LastName: Desai
+Email: meera.desai@example.com
+PhoneNumber: 9867890123
