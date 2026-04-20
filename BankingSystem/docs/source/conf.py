@@ -10,8 +10,8 @@ import sys
 sys.path.insert(0, os.path.abspath('../../src'))
 
 project = 'Banking System'
-copyright = '2026, Shanmuga Lingam K'
-author = 'Shanmuga Lingam K'
+copyright = '2026, Lathikka'
+author = 'Lathikka'
 
 extensions = [
     'sphinx.ext.autodoc',
