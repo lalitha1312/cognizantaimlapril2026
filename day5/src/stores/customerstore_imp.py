@@ -21,16 +21,14 @@ class CustomerStoreImp(CustomerStore):
 
 
     def update_customer(self, customer_id, customer):
-        for i in range(len(self.customers)):
-            if self.customers[i].id == customer_id:
-                self.customers[i] = customer
-                return 
-        raise CustomerNotFound(customer_id)
+        if customer_id in self.customers:
+            self.customers[customer_id] = customer
+        else:
+            raise CustomerNotFound(customer_id)
 
 
     def delete_customer(self, customer_id):
-        for i in range(len(self.customers)):
-            if self.customers[i].id == customer_id:
-                del self.customers[i]
-                return True
+        if customer_id in self.customers:
+            del self.customers[customer_id]
+            return True
         return False
