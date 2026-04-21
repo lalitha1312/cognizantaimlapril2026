@@ -1,7 +1,7 @@
 CustID: 201
-FirstName: Aarav
-LastName: Patel
-Email: aarav.patel@example.com
+FirstName: ashok
+LastName: Shanmugam
+Email: ashok.shanmugam@example.com
 PhoneNumber: 9876543210
 
 CustID: 202

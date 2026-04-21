@@ -29,9 +29,9 @@
   },
   {
     "CustID": 205,
-    "FirstName": "Arjun",
+    "FirstName": "Sid",
     "LastName": "Menon",
-    "Email": "arjun.menon@example.com",
+    "Email": "sid.menon@example.com",
     "PhoneNumber": "9812345678"
   },
   {
@@ -43,9 +43,9 @@
   },
   {
     "CustID": 207,
-    "FirstName": "Rohan",
+    "FirstName": "Rajesh",
     "LastName": "Chopra",
-    "Email": "rohan.chopra@example.com",
+    "Email": "rajesh.chopra@example.com",
     "PhoneNumber": "9834567890"
   },
   {
